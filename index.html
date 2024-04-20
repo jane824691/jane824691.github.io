@@ -128,7 +128,7 @@
     </section>
 
     <section id="Portfolio">
-        <h2>作品集</h2>
+        <h2>功能牆</h2>
         <div id='nthchildlist' class="container wrap">
             <div class="CardPart">
                 <div class="card">
@@ -137,7 +137,7 @@
                     </div>
                     <div class=" side back">
                         <form action="" method="get" enctype="application/x-www-form-urlencoded">
-                            <h3>BMI計算機</h3>
+                            <h3>【Js】BMI計算機</h3>
                             <h5>身高：</h5>
                             <input type="number" id="tall">
                             <h5>體重：</h5>
@@ -156,7 +156,15 @@
                     <div class="side">
                         <img src="./imgs/japan2.jpg" alt="">
                     </div>
-                    <div class=" side back">圖2</div>
+                    <div class=" side back">
+                        <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                            <h3>【Js】年齡計算機</h3>
+                            <p>請輸入生日：</p>
+                            <input type="date" id="userBirthday">
+                            <div id="AgeResult">
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="side">
@@ -164,7 +172,7 @@
                     </div>
                     <div class="side back">
                         <div class="table">
-                            <h5>九九乘法表</h5>
+                            <h5>【Js】九九乘法表</h5>
                             <div id="result"></div>
                         </div>
                     </div>
@@ -200,7 +208,7 @@
                     </div>
                     <div class=" side back">
                         <div class="shop">
-                            <h5 class="shop-title">貓狗寵物商城 <span class="shop-timeline">(2024/1~仍在進行)</span></h5>
+                            <h5 class="shop-title"><a href="https://github.com/jane824691/petpet_shop_fronted" target="_blank">貓狗寵物商城 </a><span class="shop-timeline">(2024/1~仍在進行)</span></h5>
                             <br />
                             <h6>
                                 <br />
@@ -309,7 +317,9 @@
 </body>
 
 <script src="./BMI.js"></script>
+<script src="./age.js"></script>
 <script>
+    // 九九乘法表
     const result = document.getElementById('result')
     for (let i = 2; i < 10; i++) {
         result.appendChild(document.createElement('div'))
