@@ -648,9 +648,6 @@ section{
 .Try1{
     height: 136px !important;
 }
-.card:nth-child(3){
-    height: 100%;
-}
 .card:nth-child(8){
     height: 136px !important;
 }
