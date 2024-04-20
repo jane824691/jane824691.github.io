@@ -191,13 +191,13 @@ section{
 }
 
 .skill-React {
-    animation: progress-js 2s ease-in-out;
+    animation: progress-React 2s ease-in-out;
     background: linear-gradient(to right, #ff1ee5, #3b228b);
     width: 80%;
 }
 
 .skill-Nodejs {
-    animation: progress-js 2s ease-in-out;
+    animation: progress-Nodejs 2s ease-in-out;
     background: linear-gradient(to right, #1ee5ff, #07ce5d);
     width: 60%;
 }
@@ -214,7 +214,7 @@ section{
     width: 60%;
 }
 .skill-vue {
-    animation: progress-mysql 2s ease-in-out;
+    animation: progress-vue 2s ease-in-out;
     background: linear-gradient(to right, #3b228b, #ff1e9e);
     width: 40%;
 }
@@ -235,11 +235,29 @@ section{
         width: 0%;
     }
     to {
-        width: 70%;
+        width: 80%;
     }
 }
 
 @keyframes progress-js {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes progress-React {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes progress-Nodejs {
     from {
         width: 0%;
     }
@@ -263,6 +281,15 @@ section{
     }
     to {
         width: 80%;
+    }
+}
+
+@keyframes progress-vue {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 40%;
     }
 }
 
