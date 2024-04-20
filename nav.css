@@ -180,7 +180,7 @@ section{
 
 .skill-css {
     animation: progress-css 2s ease-in-out;
-    background: linear-gradient(to right, #ff5c5c, #c075f5);
+    background: linear-gradient(to right, #ff5c5c, #ae3cff);
     width: 80%;
 }
 
@@ -192,7 +192,7 @@ section{
 
 .skill-React {
     animation: progress-React 2s ease-in-out;
-    background: linear-gradient(to right, #ff1ee5, #3b228b);
+    background: linear-gradient(to right, #c075f5, #3b228b);
     width: 80%;
 }
 
@@ -215,7 +215,7 @@ section{
 }
 .skill-vue {
     animation: progress-vue 2s ease-in-out;
-    background: linear-gradient(to right, #3b228b, #ff1e9e);
+    background: linear-gradient(to right, #f575cd, #fb4258);
     width: 40%;
 }
 
