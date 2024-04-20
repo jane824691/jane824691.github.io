@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD-陳怡真</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./nav.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"><a href="">My Web</a></div>
+        <div class="menu-icon"><a href="">Menu</a></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="About">
+        <div class="container space-around">
+            <div class="photo">
+                <img class="my-img" src="./imgs/myself.jpg" alt="">
+            </div>
+            <div class="description">
+                <div class="profile">
+                    <h1>陳怡真</h1>
+                    <h3>追求美感與效能的前端工程師</h3>
+                    <p>我的程式熱情起源於解決工作中的問題，自那以後，我使用不同的程式語言和框架來撰寫強大、可擴展和易用的應用程式。我相信程式是一門藝術，無論是跨平台的響應式設計還是優化的代碼結構，我致力於將美感與效能融為一體，為用戶帶來前所未有的享受。
+                    </p>
+                </div>
+                <div class="education">
+                    <h3>學歷</h3>
+                    <ul class="education-list">
+                        <li>
+                            <h4>學士學位</h4>
+                            <p class="education-meta">世新大學英語系 | 2011 - 2015</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="Skills">
+                    <h3>技能</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-bar">
+                                <span class="skill-level-html skill-html">80%</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-bar">
+                                <span class="skill-level-html skill-css">80%</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-bar">
+                                <span class="skill-level-html skill-js">70%</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-name">React</span>
+                            <span class="skill-bar">
+                                <span class="skill-level-html skill-React">80%</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-name">Nodejs</span>
+                            <span class="skill-bar">
+                                <span class="skill-level-html skill-Nodejs">60%</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-name">PHP</span>
+                            <span class="skill-bar">
+                                <span class="skill-level-html skill-php">50%</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-bar">
+                                <span class="skill-level-html skill-mysql">60%</span>
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="Experience">
+        <div class="container">
+            <h2 class="h2-title">經歷</h2>
+            <ul class="experience-list">
+                <li class="Group1">
+                    <div class="date">2023/9 ~ 2024/1</div>
+                    <div class="company-logo"><img class="workcompany" src="./imgs/iSpan.jpg" alt="logo of iSpan"></div>
+                    <div class="company-name">資展國際股份有限公司附設臺北職業訓練中心</div>
+                    <div></div>
+                    <div class="job-title">前端工程師就業養成班</div>
+                </li>
+                <li class="Group2">
+                    <div class="date">2017/8 ~ 2023/5</div>
+                    <div class="company-logo"><img class="workcompany" src="./imgs/Essen.jpg" alt="logo of Essen"></div>
+                    <div class="company-name">翼勝專利商標事務所</div>
+                    <div></div>
+                    <div class="job-title">專利程序人員</div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="Portfolio">
+        <h2>作品集</h2>
+        <div id='nthchildlist' class="container wrap">
+            <div class="CardPart">
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/japan1.jpg" alt="">
+                    </div>
+                    <div class=" side back">
+                        <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                            <h3>BMI計算機</h3>
+                            <h5>身高：</h5>
+                            <input type="number" id="tall">
+                            <h5>體重：</h5>
+                            <input type="number" id="weight">
+                            <div class="box">
+                                <button id="btn">計算BMI值</button>
+                                <button id="clearBtn">清除結果</button>
+                            </div>
+
+                            <div id="answer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/japan2.jpg" alt="">
+                    </div>
+                    <div class=" side back">圖2</div>
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/food1.jpg" alt="">
+                    </div>
+                    <div class="side back">
+                        <div class="table">
+                            <h5>九九乘法表</h5>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/japan3.jpg" alt="">
+                    </div>
+                    <div class=" side back">圖4</div>
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/photo1.jpg" alt="">
+                    </div>
+                    <div class=" side back">圖5</div>
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/pancake.jpg" alt="">
+                    </div>
+                    <div class=" side back">圖6</div>
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/flowers1.jpg" alt="">
+                    </div>
+                    <div class=" side back">圖7</div>
+                </div>
+                <div class="card">
+                    <div class="side Try1">
+                        <img src="./imgs/shop.gif" alt="">
+                    </div>
+                    <div class=" side back">圖8</div>
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/photo3.jpg" alt="">
+                    </div>
+                    <div class=" side back">圖9</div>
+                </div>
+                <div class="card">
+                    <div class="side">
+                        <img src="./imgs/photo1.jpg" alt="">
+                    </div>
+                    <div class=" side back">圖10</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="Lastone">
+
+        <div class="container">
+            <div class="contactUS">
+                <div>
+                    <h2>Contact Me</h2>
+                    <p>如有任何問題或疑問，隨時歡迎聯絡我。</p>
+                    <br>
+                    <div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i><span>新北市板橋區溪崑二街</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone-flip"></i><span>0978-071-802</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i><span>jane824691@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form1">
+
+                <form action="" method="get" enctype="application/x-www-form-urlencoded">
+                    <div>姓名</div>
+                    <label for="MyName"></label>
+                    <input class="textBox" type="text" name="" id="MyName" placeholder="" required>
+
+                    <div>Email</div>
+                    <label for="MyEmail"></label>
+                    <input class="textBox" type="text" name="" id="MyEmail" placeholder="" required>
+
+                    <div>電話</div>
+                    <label for="MyTEL"></label>
+                    <input class="textBox" type="text" name="" id="MyTEL" placeholder="" required>
+
+                    <div><label for="MyMemo" class="t1">訊息</label></div>
+                    <textarea class="textBox anothertextbox" name="Memo" id="MyMemo" cols="30" rows="10"></textarea>
+
+                    <div><input class="button1" type="submit" value="確定送出"></div>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy 2024 by Janet</p>
+    </footer>
+</body>
+
+<script src="./BMI.js"></script>
+<script>
+    const result = document.getElementById('result')
+    for (let i = 2; i < 10; i++) {
+        result.appendChild(document.createElement('div'))
+        for (let j = 1; j < 10; j++) {
+            let target = result.children;
+            target[i - 2].innerHTML += `<p>${i} * ${j} = ${i * j}</p>`
+        }
+    }
+</script>
+
+</html>

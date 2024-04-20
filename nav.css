@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap');
+/* font-family: 'Mukta', sans-serif; 
+    font-family: 'Dosis';
+*/
+/* 電腦與平板上應用的樣式 */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: Arial, 微軟正黑體;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(237, 237, 237);
+    margin: 0px;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+h4{
+    color: #000000;
+}
+
+.logo{
+    width: 100px;
+    background-color:#d24261;
+    text-align: center;
+    padding: 10px;
+}
+.logo a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Mukta";
+}
+.menu-icon{
+    width: 100px;
+    font-size: 20px;
+    font-family: "Mukta";
+    border-radius: 10px;
+}
+.menu-icon a{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffebeb;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    align-items: stretch;
+}
+.navbar > ul{
+    display: flex;
+    
+}
+.navbar ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+}
+.navbar ul li a:hover{
+    background-color: lightsalmon;
+}
+
+.container{
+max-width: 100%;
+width: 100%;
+padding: 10px 0;
+display: flex;
+justify-content: center;
+font-family: Arial, 微軟正黑體;
+
+}
+.space-around{
+    justify-content: space-around;
+}
+#About{
+    background-image: #ebdddd
+}
+.photo{
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About div img{
+    height: 500px;
+    max-width: 100%;
+}
+.my-img{
+    box-shadow: 20px 15px 0px #e26681;
+}
+.description{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile{
+    line-height: 30px;
+    padding: 30px 0;
+    width: 75%;
+}
+.education .education-list li{
+    width: 70%;
+    line-height: 30px;
+    padding-left: 10px;
+    background-color: #ffb7ab;
+    margin: 20px;
+    border-radius: 5px;
+}
+.education-meta{
+    color: #444;
+}
+
+section{
+    padding: 50px;
+}
+/* 技能列表 */
+.skill-list li{
+    padding: 10px 0px;
+}
+.skill-name{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 80px;
+    margin-right: 30px;
+}
+.skill-bar{
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+    background-color: #d5cccc;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #999 inside;
+    position: relative;
+}
+.skill-level-html{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: rgb(214, 41, 148);
+    opacity: 0.8;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffebeb;
+}
+
+.skill-html{
+    animation: progress-html 2s ease-in-out;
+    background: linear-gradient(to right, #f89e59, #FF4500);
+    width: 80%;
+}
+
+.skill-css {
+    animation: progress-css 2s ease-in-out;
+    background: linear-gradient(to right, #ff5c5c, #c075f5);
+    width: 80%;
+}
+
+.skill-js {
+    animation: progress-js 2s ease-in-out;
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    width: 70%;
+}
+
+.skill-React {
+    animation: progress-js 2s ease-in-out;
+    background: linear-gradient(to right, #ff1ee5, #3b228b);
+    width: 80%;
+}
+
+.skill-Nodejs {
+    animation: progress-js 2s ease-in-out;
+    background: linear-gradient(to right, #1ee5ff, #07ce5d);
+    width: 60%;
+}
+
+.skill-php {
+    animation: progress-php 2s ease-in-out;
+    background: linear-gradient(to right, #dbea38, #07ce5d);
+    width: 50%;
+}
+
+.skill-mysql {
+    animation: progress-mysql 2s ease-in-out;
+    background: linear-gradient(to right, #00BFFF, #3b228b);
+    width: 60%;
+}
+
+
+/* skill Animation */
+
+@keyframes progress-html {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes progress-css {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes progress-js {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes progress-php {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes progress-mysql {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+.img{
+    width: 30%;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1.5%
+
+}
+#Experience{
+    background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);;
+}
+#Experience>.container{
+    display: flex;
+    height: 50%;
+    width: 75%;
+    margin-left: 10%;
+    flex-direction: column;
+}
+#Experience>.container>h2{
+    display: flex;
+}
+.Group1, .Group2 {
+    margin: 20px 0;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    border-bottom: 1px rgb(151, 147, 147) solid;
+}
+.date, .company-logo, .company-name, .job-title{
+    display: flex;
+    align-items: center;
+}
+.date{
+    font-weight: bold;
+    
+}
+.company-name, .job-title{
+    line-height: 30px;
+    font-weight: bold;
+}
+.workcompany{
+    height: 50px;
+    border-radius: 45%;
+}
+
+.job-title, .company-name{
+    display: grid;
+}
+.text{
+    width: 30%;
+    height: 200px;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1.5%
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: #2c2c2c;
+}
+footer p{
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+.header{
+    background-color:#e26681;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.CardPart{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr); 
+}
+img{
+    max-width: 100%;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+.back{
+    display: flex;
+    background: #e26681;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+}
+.card:hover .side {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0deg);
+}
+
+.card:nth-child(3){
+    grid-area: 1 / 3 / 2 / 5 ;
+}
+.card:nth-child(6){
+    grid-area: 2 / 4 / 3 / 6 ;
+}
+.card:nth-child(8){
+    grid-area: 2 / 2 / 4 / 4 ;
+    height: 410px;
+}
+
+/* 延展圖片撐開高度 */
+.card:nth-child(8) img{
+    height: 100%;
+    object-fit: fill;
+}
+
+.contactUS{
+    margin-top: 50px;
+    padding: 100px;
+    height: 200px;
+    width: 30%;
+    color: #fff;
+    line-height: 40px;
+}
+
+i{
+    margin-right: 10px;
+}
+
+.form1{
+    height: 530px;
+    width: 40%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+h1{
+    text-shadow: 2px 2px 4px #807373;
+    line-height: 45px;
+    color: #000000;
+}
+h3{
+    text-shadow: 2px 2px 4px #807373;
+    line-height: 45px;
+    color: #342727;
+}
+.Lastone{
+    background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);
+}
+.textBox{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    border: #fff;
+    background-color: #f1f1f1;
+}
+.anothertextbox{
+    height: 33%;
+}
+.button1{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border: 0;
+    background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);
+}
+#Portfolio h2{
+text-align: center;
+}
+
+/* 圖3 - 99乘法表 */
+.table{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+#result{
+    display: inline-flex;
+    border: 1px solid black;
+}
+
+#result > div{
+    padding: 5px;
+    margin: 0;
+}
+
+#result p {
+    margin: 5px 0px;
+    font-size: 10px;
+}
+
+#result div:not(:last-child){
+    border-right: 1px solid black;
+}
+
+
+/* 手機 */
+@media screen and (max-width:500px) {
+.menu-icon{
+    font-size: 20px;
+    position: relative;
+    height: 3rem;
+    cursor: pointer;
+}
+.menu-icon:after{
+    position: absolute;
+    /* background-color: aqua; */
+    content: "";
+    left: -12px;
+    width: 24px;
+    height: 3px;
+    border-top: 9px double #fff;
+    border-bottom: 3px solid #fff;
+    top: calc((48px - 15px) / 2);
+}
+
+.navbar{
+    width: 100%;
+}
+.navbar > ul{
+    flex-direction: column;
+}
+.navbar > ul, .navbar ul li{
+    width: 100%;
+}
+.navbar ul li a{
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color:#e26681;
+    border: solid 1px #ffffff;
+}
+.container{
+    flex-direction: column;
+}
+#Experience .container{
+    width: 85%;
+}
+.description{
+    padding-left: 13%;
+}
+.photo,.description{
+    width: 100%;
+}
+.photo,.description,.skill{
+    margin-bottom: 30px;
+}
+section{
+    padding: 30px 13px;
+}
+
+.skill-bar{
+    width: 45%;
+}
+.CardPart{
+    margin-top: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.card{
+    width: 47%;
+    height: 136px;
+}
+
+.card>img{
+    width: 100%;
+    object-fit: fill;
+}
+.Try1{
+    height: 136px !important;
+}
+.card:nth-child(8){
+    height: 136px !important;
+}
+
+.contactUS{
+    margin-top: 20px;
+    padding-left: 40px;
+    width: 80%;
+}
+.form1{
+    margin: auto;
+    width: 80%;
+}
+
+.Group1, .Group2, .h2-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.date, .company-logo, .company-name, .job-title{
+margin-bottom: 20px;
+
+}
+
+/* #nthchildlist>div:nth-child(1){
+    order: 1
+}
+#nthchildlist>div:nth-child(2){
+    order: 2
+}
+#nthchildlist>div:nth-child(3){
+    order: 4
+}
+#nthchildlist>div:nth-child(4){
+    order: 3
+}
+#nthchildlist>div:nth-child(5){
+    order: 5
+}
+#nthchildlist>div:nth-child(6){
+    order: 6
+} */
+}
+/* 平板 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
