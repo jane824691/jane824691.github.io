@@ -128,7 +128,7 @@
     </section>
 
     <section id="Portfolio">
-        <h2>功能牆</h2>
+        <h2>練習作品</h2>
         <div id='nthchildlist' class="container wrap">
             <div class="CardPart">
                 <div class="card">
@@ -136,19 +136,19 @@
                         <img src="./imgs/japan1.jpg" alt="">
                     </div>
                     <div class=" side back">
-                        <form action="" method="get" enctype="application/x-www-form-urlencoded">
-                            <h3>【Js】BMI計算機</h3>
-                            <h5>身高：</h5>
-                            <input type="number" id="tall">
-                            <h5>體重：</h5>
-                            <input type="number" id="weight">
+                        <form class="card-content" action="" method="get" enctype="application/x-www-form-urlencoded">
+                            <h5>【Js】BMI計算</h5>
+                            <h6>身高：</h6>
+                            <input type="number" id="tall" class="inputBox">
+                            <h6>體重：</h6>
+                            <input type="number" id="weight" class="inputBox">
                             <div class="box">
-                                <button id="btn">計算BMI值</button>
-                                <button id="clearBtn">清除結果</button>
+                                <button id="btn" class="button-input">計算BMI值</button>
+                                <button id="clearBtn"  class="button-input">清除結果</button>
                             </div>
 
-                            <div id="answer">
-                            </div>
+                            <h5 id="answer">
+                            </h5>
                         </form>
                     </div>
                 </div>
@@ -157,12 +157,12 @@
                         <img src="./imgs/japan2.jpg" alt="">
                     </div>
                     <div class=" side back">
-                        <form action="" method="get" enctype="application/x-www-form-urlencoded">
-                            <h3>【Js】年齡計算機</h3>
-                            <p>請輸入生日：</p>
-                            <input type="date" id="userBirthday">
-                            <div id="AgeResult">
-                            </div>
+                        <form class="card-content" method="get" enctype="application/x-www-form-urlencoded">
+                            <h5>【Js】年齡計算</h5>
+                            <h6>請輸入生日：</h6>
+                            <input type="date" id="userBirthday" class="inputBox">
+                            <h6 id="AgeResult">
+                            </h6>
                         </form>
                     </div>
                 </div>

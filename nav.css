@@ -401,6 +401,11 @@ img{
     backface-visibility: hidden;
     transition: transform 0.5s;
 }
+.card-content{
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 22px;
+}
 .back{
     display: flex;
     background: #e26681;
@@ -477,7 +482,18 @@ h3{
     border-radius: 5px;
     border: #fff;
     background-color: #f1f1f1;
+    text-indent: 2%
 }
+.inputBox{
+    margin-bottom: 5px;
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    border: #fff;
+    background-color: #f1f1f1;
+    text-indent: 3%
+}
+
 .anothertextbox{
     height: 33%;
 }
@@ -487,6 +503,16 @@ h3{
     font-size: 18px;
     height: 40px;
     width: 120px;
+    border-radius: 5px;
+    border: 0;
+    background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);
+}
+.button-input{
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 12px;
+    height: 20px;
+    width: 80px;
     border-radius: 5px;
     border: 0;
     background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);
@@ -621,6 +647,9 @@ section{
 }
 .Try1{
     height: 136px !important;
+}
+.card:nth-child(3){
+    height: 100%;
 }
 .card:nth-child(8){
     height: 136px !important;
