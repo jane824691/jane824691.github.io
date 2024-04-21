@@ -512,7 +512,7 @@ h3{
 }
 .inputBox{
     margin-bottom: 5px;
-    width: 100%;
+    width: 70%;
     height: 20px;
     border-radius: 5px;
     border: #fff;
@@ -522,6 +522,9 @@ h3{
 
 .anothertextbox{
     height: 33%;
+}
+.bmi-input{
+    display: flex;
 }
 .button1{
     margin-top: 10px;
@@ -538,7 +541,7 @@ h3{
     color: #fff;
     font-size: 12px;
     height: 20px;
-    width: 80px;
+    width: 75px;
     border-radius: 5px;
     border: 0;
     background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);
@@ -560,7 +563,7 @@ text-align: center;
 }
 
 #result > div{
-    padding: 5px;
+    padding: 4px;
     margin: 0;
 }
 
@@ -588,6 +591,7 @@ text-align: center;
 .shop-intro{
     padding-left: 8%;
     font-weight: 400;    
+    margin-bottom: 10px;
 }
 
 .shop-timeline{
@@ -619,6 +623,10 @@ text-align: center;
         grid-area: 2 / 2 / 4 / 3 ;
         height: 410px;
     }
+    #result > div{
+        padding: 3px;
+        margin: 0;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 1150px) {
     .CardPart{
@@ -645,6 +653,51 @@ text-align: center;
     .card:nth-child(8){
         grid-area: 3 / 3 / 5 / 3 ;
         height: 410px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+
+    .CardPart{
+        margin-top: 12px;
+        margin-bottom: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .card{
+        width: 47%;
+        height: 136px;
+    }
+    
+    .card>img{
+        width: 100%;
+        object-fit: fill;
+    }
+    .card:nth-child(8){
+        height: 136px !important;
+    }
+    .card:nth-child(8) img{
+        height: 136px !important;
+        width: 100%;
+    }
+    .card:nth-child(3){
+        height: 136px !important;
+    }
+    .inputBox{
+        width: 40%;
+    }
+    .tallWeight{
+        display: flex;    
+        flex-direction: row;
+    }
+    .box{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .button-input{
+        width: 40%;
+        margin-right: 30px;
     }
 }
 
@@ -803,6 +856,23 @@ section{
 .date, .company-logo, .company-name, .job-title{
 margin-bottom: 20px;
 
+}
+.card-content{
+    width: 100%;
+}
+.inputBox{
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+.card-content{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.card-content>.birth-content{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* #nthchildlist>div:nth-child(1){

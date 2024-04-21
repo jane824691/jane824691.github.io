@@ -138,12 +138,19 @@
                     <div class=" side back">
                         <form class="card-content" action="" method="get" enctype="application/x-www-form-urlencoded">
                             <h5>【Js】BMI計算</h5>
-                            <h6>身高：</h6>
-                            <input type="number" id="tall" class="inputBox">
-                            <h6>體重：</h6>
-                            <input type="number" id="weight" class="inputBox">
+                            <div class="tallWeight">
+                                <div class="bmi-input">
+                                    <h6>身高：</h6>
+                                    <input type="number" id="tall" class="inputBox">
+                                </div>
+                                <div class="bmi-input">
+                                    <h6>體重：</h6>
+                                    <input type="number" id="weight" class="inputBox">
+                                </div>
+                            </div>
+
                             <div class="box">
-                                <button id="btn" class="button-input">計算BMI值</button>
+                                <button id="btn" class="button-input">計算BMI</button>
                                 <button id="clearBtn" class="button-input">清除結果</button>
                             </div>
 
@@ -158,11 +165,13 @@
                     </div>
                     <div class=" side back">
                         <form class="card-content" method="get" enctype="application/x-www-form-urlencoded">
+                            <div class="birth-content">
                             <h5>【Js】年齡計算</h5>
                             <h6>請輸入生日：</h6>
                             <input type="date" id="userBirthday" class="inputBox">
                             <h6 id="AgeResult">
                             </h6>
+                        </div>
                         </form>
                     </div>
                 </div>
@@ -213,10 +222,7 @@
                             <br />
                             <h6>
                                 <br />
-
-                                以React開發前端，Node串接後端，以Mysql為主進行資料庫設計，建立的虛擬寵物電商平台。
-                                <br />
-                                <br />
+                                React開發前端，Node串接後端，以Mysql為資料庫，虛擬寵物電商平台。
 
                                 功能簡介：
                                 <ul class="shop-intro">
@@ -226,15 +232,14 @@
                                     <li>會員查看歷史成立訂單</li>
                                 </ul>
 
-                                <br />
                                 技術內涵：
 
                                 <ol class="shop-intro">
                                     <li>使用Bootstrap搭配Sass來客製化CSS樣式</li>
                                     <li>使用Next.js的路由來完成SPA</li>
-                                    <li>串接RESTful API實作後端，加入搜尋結果回傳前端對接</li>
-                                    <li>使用React Hook完成購物車計算，並以Props傳遞變數</li>
-                                    <li>將商品列表&搜尋分割多個components，方便分開管理</li>
+                                    <li>串接RESTful API後端，加入搜尋條件回傳前端對接</li>
+                                    <li>使用React Hooks完成購物車計算，並以Props傳遞變數</li>
+                                    <li>將商品列表分割多個components，方便分開管理</li>
                                 </ol>
 
 
