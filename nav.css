@@ -24,6 +24,10 @@ a{
 h4{
     color: #000000;
 }
+img{
+    max-width: 100%;
+    height: auto;
+}
 
 .logo{
     width: 100px;
@@ -69,7 +73,7 @@ h4{
 .navbar ul li a{
     font-size: 18px;
     font-weight: bold;
-    width: 120px;
+    width: 110px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -104,8 +108,9 @@ font-family: Arial, 微軟正黑體;
     align-items: center;
 }
 #About div img{
-    height: 500px;
+    /* height: 31.25rem; */
     max-width: 100%;
+    max-height: 500px;
 }
 .my-img{
     box-shadow: 20px 15px 0px #e26681;
@@ -192,7 +197,7 @@ section{
 
 .skill-React {
     animation: progress-React 2s ease-in-out;
-    background: linear-gradient(to right, #c075f5, #3b228b);
+    background: linear-gradient(to right, #FFD700, #1ee5ff);
     width: 80%;
 }
 
@@ -216,7 +221,7 @@ section{
 .skill-vue {
     animation: progress-vue 2s ease-in-out;
     background: linear-gradient(to right, #f575cd, #fb4258);
-    width: 40%;
+    width: 30%;
 }
 
 /* skill Animation */
@@ -289,12 +294,12 @@ section{
         width: 0%;
     }
     to {
-        width: 40%;
+        width: 30%;
     }
 }
 
 
-.img{
+/* .img{
     width: 30%;
     height: 200px;
     background-color: lightblue;
@@ -303,7 +308,7 @@ section{
     align-items: center;
     margin:1.5%
 
-}
+} */
 #Experience{
     background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);;
 }
@@ -317,6 +322,22 @@ section{
 #Experience>.container>h2{
     display: flex;
 }
+
+/* 經歷開啟時有漸入效果 */
+.article {
+    /* position: relative;
+    top: 50%;
+    right: 0;
+    animation: slideIn-Experience 1s ease-out; */
+
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+.article.fade-in {
+    opacity: 1;
+    transform: none;
+}
+
 .Group1, .Group2 {
     margin: 20px 0;
     padding: 20px 0;
@@ -372,6 +393,8 @@ footer p{
     align-content: stretch;
     flex-wrap: wrap;
 }
+
+/* 照片牆grid設定 */
 .CardPart{
     width: 80%;
     margin: 50px auto;
@@ -380,14 +403,15 @@ footer p{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr); 
 }
-img{
-    max-width: 100%;
+/* 只要class有以下名稱，不用card-1 card-2一個一個設定 */
+[class^="card-"]{
+
 }
 
 .card{
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: 200px; 
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
@@ -438,8 +462,10 @@ img{
 /* 延展圖片撐開高度 */
 .card:nth-child(8) img{
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
+
+
 
 .contactUS{
     margin-top: 50px;
@@ -569,6 +595,104 @@ text-align: center;
     font-size: 10px;
 }
 
+/* 為了照片牆縮放 */
+@media screen and (min-width: 500px) and (max-width: 1400px) {
+    .CardPart{
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+    }
+    .card:nth-child(3){
+        grid-area: 1 / 3 / 2 / 5 ;
+        object-fit: cover;
+        height: 100%;
+
+    }
+    .card:nth-child(6){
+        grid-area: 2 / 4 / 3 / 5 ;
+        object-fit: cover;
+    }
+    .card:nth-child(8){
+        grid-area: 2 / 2 / 4 / 3 ;
+        height: 410px;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1150px) {
+    .CardPart{
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr); 
+    }
+    .card:nth-child(3){
+        grid-area: 4 / 1 / 5 / 3 ;
+
+    }
+    .card:nth-child(5){
+        grid-area: 3 / 1 / 4 / 2 ;
+
+    }
+    
+    .card:nth-child(6){
+        grid-area: 2 / 3 / 3 / 4 ;
+
+    }
+    .card:nth-child(8){
+        grid-area: 3 / 3 / 5 / 3 ;
+        height: 410px;
+    }
+}
+
+/* 平板 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        flex-direction: column;
+    }
+    #Contact .container{
+        align-items: center;
+    }
+    
+    .description{
+        padding-left: 13%;
+    }
+    .photo,.description{
+        width: 100%;
+    }
+
+    .contactUS{
+        padding-bottom: 20%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    #Contact .container{
+        align-items: center;
+    }
+    
+    .description{
+        padding-left: 13%;
+    }
+    .photo,.description{
+        width: 100%;
+    }
+
+    .contactUS{
+        padding-bottom: 20%;
+    }
+
+    .contactUS, .form1{
+        width: 80%;
+    }
+
+}
 
 /* 手機 */
 @media screen and (max-width:500px) {
@@ -612,6 +736,7 @@ text-align: center;
 #Experience .container{
     width: 85%;
 }
+
 .description{
     padding-left: 13%;
 }
@@ -651,15 +776,20 @@ section{
 .card:nth-child(8){
     height: 136px !important;
 }
+.card:nth-child(3){
+    /* grid-area: 2 / 1 / 3 / 2 ; */
+    height: 136px !important;
+
+}
 
 .contactUS{
     margin-top: 20px;
     padding-left: 40px;
-    width: 80%;
+    width: 70%;
 }
 .form1{
     margin: auto;
-    width: 80%;
+    width: 70%;
 }
 
 .Group1, .Group2, .h2-title {
@@ -693,8 +823,4 @@ margin-bottom: 20px;
 #nthchildlist>div:nth-child(6){
     order: 6
 } */
-}
-/* 平板 */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    
 }

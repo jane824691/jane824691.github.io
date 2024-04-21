@@ -69,7 +69,7 @@
                             </span>
                         </li>
                         <li>
-                            <span class="skill-name">React</span>
+                            <span class="skill-name" id="React">React</span>
                             <span class="skill-bar">
                                 <span class="skill-level-html skill-React">80%</span>
                             </span>
@@ -95,7 +95,7 @@
                         <li>
                             <span class="skill-name">Vue <span class="shop-timeline">(學習中)</span></span>
                             <span class="skill-bar">
-                                <span class="skill-level-html skill-vue">40%</span>
+                                <span class="skill-level-html skill-vue">30%</span>
                             </span>
                         </li>
                     </ul>
@@ -105,7 +105,7 @@
         </div>
     </section>
     <section id="Experience">
-        <div class="container">
+        <div class="container article" id="article">
             <h2 class="h2-title">經歷</h2>
             <ul class="experience-list">
                 <li class="Group1">
@@ -144,7 +144,7 @@
                             <input type="number" id="weight" class="inputBox">
                             <div class="box">
                                 <button id="btn" class="button-input">計算BMI值</button>
-                                <button id="clearBtn"  class="button-input">清除結果</button>
+                                <button id="clearBtn" class="button-input">清除結果</button>
                             </div>
 
                             <h5 id="answer">
@@ -182,25 +182,25 @@
                     <div class="side">
                         <img src="./imgs/japan3.jpg" alt="">
                     </div>
-                    <div class=" side back">圖4</div>
+                    <div class=" side back">Building-4</div>
                 </div>
                 <div class="card">
                     <div class="side">
                         <img src="./imgs/photo1.jpg" alt="">
                     </div>
-                    <div class=" side back">圖5</div>
+                    <div class=" side back">Building-5</div>
                 </div>
                 <div class="card">
                     <div class="side">
                         <img src="./imgs/pancake.jpg" alt="">
                     </div>
-                    <div class=" side back">圖6</div>
+                    <div class=" side back">Building-6</div>
                 </div>
                 <div class="card">
                     <div class="side">
                         <img src="./imgs/flowers1.jpg" alt="">
                     </div>
-                    <div class=" side back">圖7</div>
+                    <div class=" side back">Building-7</div>
                 </div>
                 <div class="card">
                     <div class="side Try1">
@@ -208,7 +208,8 @@
                     </div>
                     <div class=" side back">
                         <div class="shop">
-                            <h5 class="shop-title"><a href="https://github.com/jane824691/petpet_shop_fronted" target="_blank">貓狗寵物商城 </a><span class="shop-timeline">(2024/1~仍在進行)</span></h5>
+                            <h5 class="shop-title"><a href="https://github.com/jane824691/petpet_shop_fronted"
+                                    target="_blank">貓狗寵物商城 </a><span class="shop-timeline">(2024/1~仍在進行)</span></h5>
                             <br />
                             <h6>
                                 <br />
@@ -249,13 +250,13 @@
                     <div class="side">
                         <img src="./imgs/photo3.jpg" alt="">
                     </div>
-                    <div class=" side back">圖9</div>
+                    <div class=" side back">Building-9</div>
                 </div>
                 <div class="card">
                     <div class="side">
                         <img src="./imgs/photo1.jpg" alt="">
                     </div>
-                    <div class=" side back">圖10</div>
+                    <div class=" side back">Building-10</div>
                 </div>
             </div>
         </div>
@@ -328,6 +329,19 @@
             target[i - 2].innerHTML += `<p>${i} * ${j} = ${i * j}</p>`
         }
     }
+
+    // 滾軸漸入動畫
+    const article = document.getElementById('article');
+    const React = document.getElementById('React');
+    const rect = React.getBoundingClientRect();
+    const triggerPosition = rect.top;
+
+    window.addEventListener('scroll', () => {
+        // 如果滾動位置超過觸發位置，就添加 fade-in 類別
+        if (window.scrollY > triggerPosition) {
+            article.classList.add('fade-in');
+        }
+    }); 
 </script>
 
 </html>
