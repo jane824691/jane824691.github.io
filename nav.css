@@ -31,7 +31,7 @@ img{
 
 .logo{
     width: 100px;
-    background-color:#d24261;
+    background-color:#fa8bbe;
     text-align: center;
     padding: 10px;
 }
@@ -387,7 +387,7 @@ footer p{
     text-align: center;
 }
 .header{
-    background-color:#e26681;
+    background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);;
     display: flex;
     justify-content: space-between;
     align-content: stretch;
@@ -780,7 +780,7 @@ text-align: center;
     width: 100%;
     line-height: 40px;
     text-align: center;
-    background-color:#e26681;
+    background-color:#ff9574;
     border: solid 1px #ffffff;
 }
 .container{
