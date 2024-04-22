@@ -299,16 +299,6 @@ section{
 }
 
 
-/* .img{
-    width: 30%;
-    height: 200px;
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:1.5%
-
-} */
 #Experience{
     background-image: linear-gradient(to right bottom, #da94de, #fa8bbe, #ff8b98, #ff9574, #eea658);;
 }
@@ -627,6 +617,9 @@ text-align: center;
         padding: 3px;
         margin: 0;
     }
+    .birth-content>.inputBox{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 500px) and (max-width: 1150px) {
     .CardPart{
@@ -836,14 +829,20 @@ section{
 }
 
 .contactUS{
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20%;
     padding-left: 40px;
     width: 70%;
 }
-.form1{
-    margin: auto;
-    width: 70%;
+input:focus, textarea:focus{
+    outline: none;
 }
+
+textarea{
+    padding-top: 3%;
+}
+
+
 
 .Group1, .Group2, .h2-title {
     display: flex;
