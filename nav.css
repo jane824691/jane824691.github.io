@@ -565,6 +565,20 @@ text-align: center;
 #result div:not(:last-child){
     border-right: 1px solid black;
 }
+/* 圖5 - chartJs */
+.chartJs-all{
+    display: flex;
+    flex-direction: column;
+
+}
+.chartJs-title{
+    padding-left: 17%;
+    padding-right: 15%;
+}
+
+.chartJs-intro{
+
+}
 
 /* 圖8 - React - 商城 */
 .shop{
