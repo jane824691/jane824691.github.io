@@ -191,7 +191,20 @@
                     <div class="side">
                         <img src="./imgs/japan3.jpg" alt="">
                     </div>
-                    <div class=" side back">Building-4</div>
+                    <div class=" side back">
+                        <div class="tmeper">
+                            <h5>換算攝氏/華氏溫度</h5>
+                            <label>
+                                <select name="unit" id="unit" class="selectBox">
+                                    <option value="temC">攝氏 ℃</option>
+                                    <option value="temF">華氏 ℉</option>
+                                </select>
+                            </label>
+                            <input type="text" id="temperature" class="inputBox">
+                        
+                            <h6 id="answerTem"></h6>
+                        </div>
+                    </div>
                 </div>
                 <div class="card">
                     <div class="side">
@@ -337,6 +350,7 @@
 
 <script src="./BMI.js"></script>
 <script src="./age.js"></script>
+<script src="./temperature.js"></script>
 <script>
     // 九九乘法表
     const result = document.getElementById('result')

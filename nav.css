@@ -510,6 +510,16 @@ h3{
     text-indent: 3%
 }
 
+.tmeper{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.selectBox{
+    border-radius: 5px;
+}
+
+
 .anothertextbox{
     height: 33%;
 }
