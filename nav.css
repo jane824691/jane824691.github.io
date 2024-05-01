@@ -179,7 +179,7 @@ section{
 
 .skill-html{
     animation: progress-html 2s ease-in-out;
-    background: linear-gradient(to right, #5b5b5b, #FF4500);
+    background: linear-gradient(to right, #f89e59, #FF4500);
     width: 80%;
 }
 
