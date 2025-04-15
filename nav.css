@@ -208,7 +208,7 @@ section{
     width: 60%;
 }
 
-.skill-php {
+.skill-ts {
     animation: progress-php 2s ease-in-out;
     background: linear-gradient(to right,  #07ce5d, #FFD700);
     width: 50%;
@@ -329,7 +329,7 @@ section{
     transform: none;
 }
 
-.Group1, .Group2 {
+.Group{
     margin: 20px 0;
     padding: 20px 0;
     display: grid;
