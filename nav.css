@@ -193,7 +193,7 @@ section{
 .skill-js {
     animation: progress-js 2s ease-in-out;
     background: linear-gradient(to right, #FFD700, #FFA500);
-    width: 70%;
+    width: 80%;
 }
 
 .skill-React {
@@ -217,7 +217,7 @@ section{
 .skill-mysql {
     animation: progress-mysql 2s ease-in-out;
     background: linear-gradient(to right, #00BFFF, #3b228b);
-    width: 60%;
+    width: 50%;
 }
 .skill-vue {
     animation: progress-vue 2s ease-in-out;
@@ -250,7 +250,7 @@ section{
         width: 0%;
     }
     to {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -286,7 +286,7 @@ section{
         width: 0%;
     }
     to {
-        width: 60%;
+        width: 50%;
     }
 }
 
