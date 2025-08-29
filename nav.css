@@ -229,7 +229,7 @@ section{
 .skill-jest {
     animation: progress-jest 2s ease-in-out;
     background: linear-gradient(to right, #e47dfe, #3b228b);
-    width: 40%;
+    width: 50%;
 }
 .skill-vue {
     animation: progress-vue 2s ease-in-out;
@@ -306,7 +306,7 @@ section{
         width: 0%;
     }
     to {
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -354,17 +354,31 @@ section{
     margin: 20px 0;
     padding: 20px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
-    border-bottom: 1px rgb(255, 255, 255) solid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 2fr;
 }
 
-.Group:last-child {
+.each-desc {
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    padding-bottom: 40px;
+    list-style: disc;
+}
+.each-desc:last-child {
     border-bottom: none;
+}
+
+.each-desc > li {
+    padding-bottom: 12px;
+}
+.each-desc > li:last-child {
+    color: #f2f2f2;
 }
 
 .date, .company-logo, .company-name, .job-title{
     display: flex;
     align-items: center;
+}
+.company-logo{
+    padding-left: 20px;
 }
 .date{
     font-weight: bold;
