@@ -215,10 +215,9 @@ section{
 }
 
 .skill-ts {
-    animation: progress-php 2s ease-in-out;
-    background: linear-gradient(to right, #1ee5ff, #07ce5d);
-
-    width: 50%;
+    animation: progress-ts 2s ease-in-out;
+    background: linear-gradient(to right, #1ee5ff, #006eff);
+    width: 60%;
 }
 
 .skill-mysql {
@@ -284,12 +283,12 @@ section{
     }
 }
 
-@keyframes progress-php {
+@keyframes progress-ts {
     from {
         width: 0%;
     }
     to {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -361,16 +360,21 @@ section{
     border-bottom: 1px rgb(255, 255, 255) solid;
     padding-bottom: 40px;
     list-style: disc;
-}
-.each-desc:last-child {
-    border-bottom: none;
+    padding-left: 20px;
 }
 
 .each-desc > li {
+    list-style: disc;
     padding-bottom: 12px;
 }
-.each-desc > li:last-child {
+
+.each-desc > li:nth-child(4){
+    list-style: none;
     color: #f2f2f2;
+}
+
+.each-desc:last-child {
+    border-bottom: none;
 }
 
 .date, .company-logo, .company-name, .job-title{
