@@ -635,16 +635,22 @@ text-align: center;
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
-    line-height: 20px;
+    line-height: 22px;
 }
 .shop-title{
 text-align: center;
+padding: 4px 0;
+
 }
 
 .shop-intro{
     padding-left: 8%;
     font-weight: 400;    
     margin-bottom: 10px;
+    padding-bottom: 2px;
+}
+.shop-intro > li{
+    list-style: disc;
 }
 
 .shop-timeline{
