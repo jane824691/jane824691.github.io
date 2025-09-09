@@ -17,29 +17,29 @@ btn.addEventListener("click", function () {
     // switch 語句的每個 case 需以一個單一值的比較
     // 像 18.5 < BMInum <24 這種寫法就為錯誤
     case BMInum < 18.5:
-      result = "體重過輕";
+      result = "Underweight";
       break;
     case BMInum >= 18.5 && BMInum < 24:
-      result = "體重正常";
+      result = "Normal";
       break;
     case BMInum >= 24 && BMInum < 27:
-      result = "體重過重";
+      result = "Overweight";
       break;
     case BMInum >= 27 && BMInum < 30:
-      result = "輕度肥胖";
+      result = "Mild obesity";
       break;
     case BMInum >= 30 && BMInum < 35:
-      result = "中度肥胖";
+      result = "Moderate obesity";
       break;
     default:
-      result = "重度肥胖";
+      result = "Severe obesity";
       break;
   }
 
   answer.innerHTML = `
         <div id="answer">
-            <h5>您的BMI為 ${BMInum}</h5>
-            <h5>您的狀態為 ${result}</h5>
+            <h5>Your BMI is ${BMInum}.</h5>
+            <h5>Result: ${result}</h5>
         </div>
     `;
 });

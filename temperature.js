@@ -23,11 +23,11 @@ function translateTem(temp, unitType) {
     switch (unitType) {
         case 'temC':
             // 攝氏轉華氏
-            resTem = `華氏溫度為${((temp * 9) / 5 + 32).toFixed(1)}℉`
+            resTem = `Fahrenheit is ${((temp * 9) / 5 + 32).toFixed(1)}℉.`
             break;
         case 'temF':
             // 華氏轉攝氏
-            resTem = `攝氏溫度為${((temp - 32) * 5 / 9).toFixed(1)}℃`
+            resTem = `Celsius is ${((temp - 32) * 5 / 9).toFixed(1)}℃.`
             break;
     }
     return resTem;
