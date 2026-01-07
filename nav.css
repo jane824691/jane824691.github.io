@@ -345,10 +345,15 @@ section{
 }
 
 .Group{
-    margin: 20px 0;
+    margin-top: 20px;
     padding: 20px 0;
     display: flex;
     gap: 40px;
+}
+
+.GroupDesc{
+    margin-bottom: 20px;
+    color: #3c3c3c;
 }
 
 .each-desc {
@@ -363,7 +368,7 @@ section{
     padding-bottom: 12px;
 }
 
-.each-desc > li:nth-child(5){
+.each-desc > li:nth-child(6){
     list-style: none;
     color: #f2f2f2;
 }
@@ -529,6 +534,7 @@ h3{
     text-indent: 2%
 }
 .inputBox{
+    margin-left: 4px;
     margin-bottom: 5px;
     width: 70%;
     height: 20px;
