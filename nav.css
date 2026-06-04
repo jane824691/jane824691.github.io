@@ -232,8 +232,8 @@ section{
 }
 .skill-vue {
     animation: progress-vue 2s ease-in-out;
-    background: linear-gradient(to right, #f575cd, #fb4258);
-    width: 30%;
+    background: linear-gradient(to right, #1ee5ff, #07ce5d);
+    width: 60%;
 }
 
 /* skill Animation */
@@ -314,7 +314,7 @@ section{
         width: 0%;
     }
     to {
-        width: 30%;
+        width: 60%;
     }
 }
 
@@ -368,7 +368,7 @@ section{
     padding-bottom: 12px;
 }
 
-.each-desc > li:nth-child(6){
+.each-desc > li:nth-child(7){
     list-style: none;
     color: #f2f2f2;
 }
