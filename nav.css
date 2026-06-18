@@ -8,6 +8,8 @@
     margin: 0;
     list-style: none;
     font-family: Arial, 微軟正黑體;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 html {
     scroll-behavior: smooth;
@@ -146,9 +148,13 @@ font-family: Arial, 微軟正黑體;
 }
 
 section{
-    padding: 50px;
+    padding: 50px 0;
 }
 /* 技能列表 */
+#Skills{
+    min-width: 100%;
+}
+
 .skill-list li{
     padding: 10px 0px;
 }
@@ -868,8 +874,9 @@ section{
 .card:nth-child(8){
     height: 136px !important;
 }
-.card:nth-child(3){
-    height: 136px !important;
+.card:nth-child(3)>img{
+    /* height: 136px !important; */
+    object-fit: cover;
 
 }
 input:focus, textarea:focus{
